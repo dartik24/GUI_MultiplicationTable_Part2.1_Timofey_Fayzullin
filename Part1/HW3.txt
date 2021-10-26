@@ -1,0 +1,4 @@
+Timofey Fayzullin
+GUI HW3
+GitHub: https://github.com/dartik24/GUI_MultiplicationTable_Timofey_Fayzullin
+WebPageLink: https://dartik24.github.io/GUI_MultiplicationTable_Timofey_Fayzullin/
