@@ -5,7 +5,7 @@ Timofey Fayzullin, Umass Lowell Computer Science,
 timofey_fayzullin@student.uml.edu
 Copyright (c) 2021 by Timofey. All rights reserved. May be freely copid or
 excerpted for educational purposes with credit to the author.
-update by TF on October 4th, 2021 at 8:14 PM*/
+update by TF on October 26th, 2021 at 8:14 PM*/
 
 function makeAchart(){
 //taking in values from input table and converting them into vars
@@ -77,7 +77,7 @@ function makeAchart(){
 }
 
 
-
+/*jq document bootup function*/
 $(document).ready(function(){
   $("#input").validate({
     rules:{
@@ -122,6 +122,7 @@ $(document).ready(function(){
     },
     errorLabelContainer: ".error"
   });
+  /*key blur*/
   $("#input").on('keyup blur', function(){
     if($("#input").validate().checkForm()){
       $('#clickMe').prop('disabled', false);
@@ -132,6 +133,7 @@ $(document).ready(function(){
   });
 });
 
+/*extra method*/
 jQuery.validator.addMethod("valueCheck", function(value, element) {
   return this.optional(element) || (-100 <= value) && (value <= 100);
 }, jQuery.validator.format("Please input a value between -100 & 100"));
